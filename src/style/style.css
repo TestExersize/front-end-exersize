@@ -1,0 +1,13 @@
+.toolbar {
+    height: 64px;
+}
+
+.toolbar__header {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.component-container {
+    width:100%;
+    height: 300px;
+}
