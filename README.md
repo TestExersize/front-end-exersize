@@ -86,7 +86,7 @@ You have simple angular application, source you can find in src, js and style fo
  Sum: <number>    
 ```      
 
-5. Create Pascal triangle component. Each digit in triangle should be one common component, that input only position indexes. User can set the height of triangle from 2 to 50.
+5. Create Pascal triangle component. Each digit in triangle should be one common component, that input only position indexes. User can set the height of triangle from 2 to 50. Component should be looks like triangle, like on the picture below. Triangle should be centered in the component.
    
   ```
 Triangle height:           ______
