@@ -1,6 +1,8 @@
-#Test assignment application for front-end developer vacancy.
+#Test assignment application for front-end developer
 
-You have simple angular application, source you can find in src, js and style folders. You should integrate you component to this application. Place your component into index.html file in the div with class `component-container`
+There is a simple angular application, sources can be found in src, js and style folders. You have to create a component which should be integrated into this application. 
+
+Note: Place your component into index.html file in the div with class `component-container`.
 
   ```html
   <div class="component-container">
@@ -8,10 +10,18 @@ You have simple angular application, source you can find in src, js and style fo
   </div>
 ```
 
-### Your task is create one of presented ``components`` for this template app:
-1. Create `comments block` component. Component represents scrollable area with user comments, each list item showing user name, comment created date and text of comment. At the bottom of component place comment input form with two fields, user name and user comment text and button 'Send'. Pressing button send will add new comment to existing list of comments. By demand from parent component should send JSON data with comments. Also parent component can send data to the component and it should parse and show this data properly.
+#### Nice to have items for the task: 
+* Instruction how to build/start application
+* Tests
+* Use any js bundler
+* Fix build scripts(comments in gulpfile.js file)
+* Use ES2015
+
+
+### Your task is to create a ``component`` specified below for this template app:
+1. Create `comments block` component. Component represents scrollable area with user comments, each list item shows user name, comment creation date and text of the comment. At the bottom of the component place comment input form with two fields, user name and user comment text and button 'Send'. Pressing 'Send' button will add new comment to the existing list of comments. Upon request from parent, component should send JSON data with comments. Also parent component can send data to the component and it should be able to parse and show the data properly.
   
-      JSON data structure, that this component should parse and output by demand
+      JSON data structure, which this component should parse and output upon request
   ```json
   {
     "data" : [
@@ -44,7 +54,7 @@ You have simple angular application, source you can find in src, js and style fo
                                         SEND BUTTON 
 ```
 
-2. Create form with 25 fields, registration form. It should contain: 
+2. Create a registration form with 25 fields. It should contain: 
       * 3 input with type - text
       * 2 input with type password(password and confirm password fields).
       * 4 select elements
@@ -55,9 +65,9 @@ You have simple angular application, source you can find in src, js and style fo
       * 1 email input field with validation
       * 1 textarea element. Restrict input to 300 elements
       
-      Provide form validation by demand from parent. All form fields except readonly input fields should have required attribute. By demand validate form and if form is valid send entered user data out of component in JSON format, otherwise hint user incorrect input. Date should be converted to milliseconds in result JSON. Also component should input data from outside and properly fill all form fields.
+      Please provide form validation upon request from parent. All form fields except readonly input fields should have required attribute. Upon request the form should be validated and if the data is valid send entered user data out of component in JSON format, otherwise hint user about incorrect input. Date should be converted to milliseconds in result JSON. Also component should input data from outside and properly fill all form fields.
 
-3. Create `user education` component. Component consist of three input fields, name, start date and end date. Near this at the right presented plus button. Optionally appearing minus button. Press plus button user can add new education place. Press minus button - user can remove added education element. There is no any restrictions for count of educational elements, user can input any count. Provide validation for this element, all text fields is required.By demand from parent component should send JSON data with added educational items. Also component should get data from outside and properly show it. Simply put, component should has input parameter and output parameter. The component can receive data from outside, user can modify it and by demand return new modified data
+3. Create `user education` component. Component consist of three input fields, name, start date and end date.On the right side should be the plus (+) button. Minus (-) buttong should appear optionally. By pressing plus button user can add new education place. By press minus button - user can remove added education element. There are no other restrictions for count of educational elements, user can input any count. Provide validation for the element, all text fields are required. Upon request from the parent, component should send JSON data with added educational items. Also component should get data from outside and properly show it. Simply put, component should has input parameter and output parameter. The component can receive data from outside, user can modify it and upon request return the modified data
  ```
  {
     "data": [
@@ -79,14 +89,14 @@ You have simple angular application, source you can find in src, js and style fo
           
      start date: ______ end date:__________
 ```               
-4. Create component that showing result of numbers sum in number, that is the exponentiation for number 2. User can choose degree in input number element. Min value is 10, max value - 250. Update all values by user input. For example, user entered 10. First line showing  2 <sup>10</sup>. Second line - 1024. Third line - 7
+4. Create a component to show sum of digits in the number, that is exponent of 2. User can choose the degree in input number element. Min value is 10, max value - 250. Update all values by user input. For example, user entered 10. First line shows  2 <sup>10</sup>. Second line - 1024. Third line - 7
  ```
  2 __________________
  Digit: <number>
  Sum: <number>    
 ```      
 
-5. Create Pascal triangle component. Each digit in triangle should be one common component, that input only position indexes. User can set the height of triangle from 2 to 50. Component should be looks like triangle, like on the picture below. Triangle should be centered in the component.
+5. Create a Pascal triangle component. Each digit inside triangle component should also be component, which gets its position index and calculates its value. User can set the height of triangle from 2 to 50. Component should look like triangle (like on the picture below). Triangle should be centered in the component.
    
   ```
 Triangle height:           ______
@@ -96,12 +106,5 @@ Triangle height:           ______
             1   2   1
           1   3   3   1
 ```
-     
-#### Additional items, better to have it: 
-* Instruction how to build/start application
-* Tests
-* Use any js bundler
-* Fix build scripts(comments in gulpfile.js file)
-* Use ES2015
 
 <sub>Component means angular special type of directive(https://docs.angularjs.org/guide/component).</sub>
