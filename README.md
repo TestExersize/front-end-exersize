@@ -63,7 +63,7 @@ Note: Place your component into index.html file in the div with class `component
       * 4 checkbox grouped together
       * 3 readonly input text fields
       * 1 email input field with validation
-      * 1 textarea element. Restrict input to 300 elements
+      * 1 textarea element. Restrict input to 300 characters
       
       Please provide form validation upon request from parent. All form fields except readonly input fields should have required attribute. Upon request the form should be validated and if the data is valid send entered user data out of component in JSON format, otherwise hint user about incorrect input. Date should be converted to milliseconds in result JSON. Also component should input data from outside and properly fill all form fields.
 
