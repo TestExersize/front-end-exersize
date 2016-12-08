@@ -18,7 +18,7 @@ Note: Place your component into index.html file in the div with class `component
 * Use ES2015
 
 
-### Your task is to create a ``component`` specified below for this template app:
+### Your task is to create a ``component`` for this template app described by the appropriate item below:
 1. Create `comments block` component. Component represents scrollable area with user comments, each list item shows user name, comment creation date and text of the comment. At the bottom of the component place comment input form with two fields, user name and user comment text and button 'Send'. Pressing 'Send' button will add new comment to the existing list of comments. Upon request from parent, component should send JSON data with comments. Also parent component can send data to the component and it should be able to parse and show the data properly.
   
       JSON data structure, which this component should parse and output upon request
