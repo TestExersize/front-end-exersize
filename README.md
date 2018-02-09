@@ -1,6 +1,6 @@
 #Test assignment application for front-end developer
 
-There is a simple angular application, sources can be found in src, js and style folders. You have to create a component which should be integrated into this application. 
+There is a simple web application, sources can be found in src, js and style folders. You have to create a component which should be integrated into this application. Component - separate piece of code. 
 
 Note: Place your component into index.html file in the div with class `component-container`.
 
@@ -15,7 +15,7 @@ Note: Place your component into index.html file in the div with class `component
 * Tests
 * Use any js bundler
 * Fix build scripts(comments in gulpfile.js file)
-* Use ES2015
+* Use ES6, VanillaJS
 
 
 ### Your task is to create a ``component`` for this template app described by the appropriate item below:
@@ -106,5 +106,3 @@ Triangle height:           ______
             1   2   1
           1   3   3   1
 ```
-
-<sub>Component means angular special type of directive(https://docs.angularjs.org/guide/component).</sub>
