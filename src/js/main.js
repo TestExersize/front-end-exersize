@@ -1,11 +1,3 @@
-angular.module('MainApp', [])
-    .controller('MainAppController', MainAppController);
+const pageHeader = document.querySelector('.toolbar__header');
 
-MainAppController.$inject = [];
-
-/* @ngInject */
-function MainAppController() {
-    var vm = this;
-
-    vm.title = 'Test application header';
-}
+pageHeader.textContent = 'Test application header';
